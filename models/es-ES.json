@@ -17,10 +17,6 @@
         },
         {
           "name": "MetarIntent",
-          "samples": [
-            "Lee metar de {a}{b}{c}{d}",
-            "Dame {a}{b}{c}{d}"
-          ],
           "slots": [
             {
               "name": "a",
@@ -38,6 +34,10 @@
               "name": "d",
               "type": "ALPHALETTER"
             }
+          ],
+          "samples": [
+            "Lee metar de {a} {b} {c} {d}",
+            "Dame {a} {b} {c} {d}"
           ]
         }
       ],
