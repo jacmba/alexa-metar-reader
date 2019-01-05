@@ -2,20 +2,20 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
-        "en-US": {
-          "summary": "Sample Short Description",
+        "es-ES": {
+          "summary": "Lector de metars",
           "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
+            "Alexa abre lector de metar",
+            "Lee metar de GOLF CHARLI LIMA PAPA",
+            "Dame GOLF CHARLI LIMA PAPA en metar"
           ],
           "name": "metar-reader",
-          "description": "Sample Full Description"
+          "description": "Reproduce el parte de meteorología de cualquier aeropuerto del mundo, a partir del código ICAO proporcionado"
         }
       },
       "isAvailableWorldwide": true,
       "testingInstructions": "Sample Testing Instructions.",
-      "category": "KNOWLEDGE_AND_TRIVIA",
+      "category": "WEATHER",
       "distributionCountries": []
     },
     "apis": {

@@ -1,0 +1,183 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "lector metar",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "MetarIntent",
+          "samples": [
+            "Lee metar de {a}{b}{c}{d}",
+            "Dame {a}{b}{c}{d}"
+          ],
+          "slots": [
+            {
+              "name": "a",
+              "type": "ALPHALETTER"
+            },
+            {
+              "name": "b",
+              "type": "ALPHALETTER"
+            },
+            {
+              "name": "c",
+              "type": "ALPHALETTER"
+            },
+            {
+              "name": "d",
+              "type": "ALPHALETTER"
+            }
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "ALPHALETTER",
+          "values": [
+            {
+              "name": {
+                "value": "alfa"
+              }
+            },
+            {
+              "name": {
+                "value": "bravo"
+              }
+            },
+            {
+              "name": {
+                "value": "charli"
+              }
+            },
+            {
+              "name": {
+                "value": "delta"
+              }
+            },
+            {
+              "name": {
+                "value": "eco"
+              }
+            },
+            {
+              "name": {
+                "value": "foxtrot"
+              }
+            },
+            {
+              "name": {
+                "value": "golf"
+              }
+            },
+            {
+              "name": {
+                "value": "hotel"
+              }
+            },
+            {
+              "name": {
+                "value": "india"
+              }
+            },
+            {
+              "name": {
+                "value": "yúlilet"
+              }
+            },
+            {
+              "name": {
+                "value": "kilo"
+              }
+            },
+            {
+              "name": {
+                "value": "lima"
+              }
+            },
+            {
+              "name": {
+                "value": "maik"
+              }
+            },
+            {
+              "name": {
+                "value": "novémber"
+              }
+            },
+            {
+              "name": {
+                "value": "óscar"
+              }
+            },
+            {
+              "name": {
+                "value": "papa"
+              }
+            },
+            {
+              "name": {
+                "value": "quebec"
+              }
+            },
+            {
+              "name": {
+                "value": "romeo"
+              }
+            },
+            {
+              "name": {
+                "value": "sierra"
+              }
+            },
+            {
+              "name": {
+                "value": "tango"
+              }
+            },
+            {
+              "name": {
+                "value": "iúniform"
+              }
+            },
+            {
+              "name": {
+                "value": "víctor"
+              }
+            },
+            {
+              "name": {
+                "value": "wiski"
+              }
+            },
+            {
+              "name": {
+                "value": "ex rey"
+              }
+            },
+            {
+              "name": {
+                "value": "yanki"
+              }
+            },
+            {
+              "name": {
+                "value": "zulú"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
