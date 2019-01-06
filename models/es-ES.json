@@ -36,8 +36,7 @@
             }
           ],
           "samples": [
-            "Lee metar de {a} {b} {c} {d}",
-            "Dame {a} {b} {c} {d}"
+            "Lee metar de {a} {b} {c} {d}"
           ]
         }
       ],
