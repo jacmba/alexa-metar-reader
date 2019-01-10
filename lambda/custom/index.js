@@ -40,64 +40,64 @@ const MetarHandler = {
 
 const HelpHandler = {
   canHandle(handlerInput) {
-    const request = handlerInput.requestEnvelope.request;
+    const request = handlerInput.requestEnvelope.request
     return request.type === 'IntentRequest'
-      && request.intent.name === 'AMAZON.HelpIntent';
+      && request.intent.name === 'AMAZON.HelpIntent'
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
       .speak(HELP_MESSAGE)
       .reprompt(HELP_REPROMPT)
-      .getResponse();
+      .getResponse()
   },
-};
+}
 
 const ExitHandler = {
   canHandle(handlerInput) {
-    const request = handlerInput.requestEnvelope.request;
+    const request = handlerInput.requestEnvelope.request
     return request.type === 'IntentRequest'
       && (request.intent.name === 'AMAZON.CancelIntent'
-        || request.intent.name === 'AMAZON.StopIntent');
+        || request.intent.name === 'AMAZON.StopIntent')
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
       .speak(STOP_MESSAGE)
-      .getResponse();
+      .getResponse()
   },
-};
+}
 
 const SessionEndedRequestHandler = {
   canHandle(handlerInput) {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === 'SessionEndedRequest';
+    const request = handlerInput.requestEnvelope.request
+    return request.type === 'SessionEndedRequest'
   },
   handle(handlerInput) {
-    console.log(`Session ended with reason: ${handlerInput.requestEnvelope.request.reason}`);
+    console.log(`Session ended with reason: ${handlerInput.requestEnvelope.request.reason}`)
 
-    return handlerInput.responseBuilder.getResponse();
+    return handlerInput.responseBuilder.getResponse()
   },
-};
+}
 
 const ErrorHandler = {
   canHandle() {
-    return true;
+    return true
   },
   handle(handlerInput, error) {
-    console.log(`Error handled: ${error.message}`);
+    console.log(`Error handled: ${error.message}`)
 
     return handlerInput.responseBuilder
       .speak('Hay un error to gordo.')
       .reprompt('Hay un error to gordo.')
-      .getResponse();
+      .getResponse()
   },
-};
+}
 
-const SKILL_NAME = 'Lector Metar';
-const HELP_MESSAGE = 'Te cuento algo o me largo?';
-const HELP_REPROMPT = 'El cómo te puedo ayudar?';
-const STOP_MESSAGE = 'Venga nos vemos, tanta gloria lleves como descanso dejas';
+const SKILL_NAME = 'Lector Metar'
+const HELP_MESSAGE = 'Te cuento algo o me largo?'
+const HELP_REPROMPT = 'El cómo te puedo ayudar?'
+const STOP_MESSAGE = 'Venga nos vemos, tanta gloria lleves como descanso dejas'
 
-const skillBuilder = Alexa.SkillBuilders.standard();
+const skillBuilder = Alexa.SkillBuilders.standard()
 
 exports.handler = skillBuilder
   .addRequestHandlers(
@@ -107,4 +107,4 @@ exports.handler = skillBuilder
     SessionEndedRequestHandler
   )
   .addErrorHandlers(ErrorHandler)
-  .lambda();
+  .lambda()

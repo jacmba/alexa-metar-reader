@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha test/unit --ui tdd"
+    "test": "node_modules/mocha/bin/mocha test/unit --ui tdd",
+    "tdd": "node_modules/mocha/bin/mocha test/unit --ui tdd --watch"
   },
   "author": "",
   "license": "ISC",
